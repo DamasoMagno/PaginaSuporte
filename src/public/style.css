@@ -23,8 +23,11 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     height: 100vh;
+}
+
+body, input, button, textarea {
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -72,7 +75,7 @@ header nav a + a{
 .back h1 {
     text-transform: uppercase;
     text-align: center;
-    padding:6rem 0;
+    padding:6.5rem 0;
     font-size: 2rem;
     color:#ffff;
     font-weight: bold;
@@ -85,6 +88,17 @@ header nav a + a{
     color:#fff;
     font-weight: bold;
     padding: 1rem 0;
+}
+
+.separator p {
+    margin-bottom: 0.5rem;
+}
+
+.separator div {
+    width:2.8rem;
+    height: 0.75rem;
+    background-color: orange;
+    margin: auto;
 }
 
 .form {
@@ -130,6 +144,10 @@ header nav a + a{
     background-color: orange;
 }
 
+.field textarea {
+    resize: none;
+}
+
 
 .social {
     background-color: #000;
@@ -140,7 +158,7 @@ header nav a + a{
 
 .social h3 {
     padding: 1rem 1rem 1.5rem;
-    font-size: 1.7rem;
+    font-size: 1.55rem;
 }
 
 .asks {
