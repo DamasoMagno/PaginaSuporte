@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+@media (max-width:700px){
+    html {
+        font-size: 75%;
+    }
+   
+    form{
+        width: 80%;
+        margin: auto;
+        font-size: 1rem;
+    }
+
+    form .field {
+        width: 100%;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+header {
+    background: #000;
+    padding:0.25rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 5%;
+}
+
+header img{
+    width: 100%;
+}
+
+header nav {
+    padding:0 1rem;
+}
+
+header nav a {
+    text-decoration: none;
+    color:#fff;
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    color:orange;
+    transition: 150ms;
+}
+
+header nav a + a{
+    margin-left: 15px;
+}
+
+.back {
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("assets/back.png");
+    background-position: right;
+    background-size: cover;
+}
+
+.back h1 {
+    text-transform: uppercase;
+    text-align: center;
+    padding:6rem 0;
+    font-size: 2rem;
+    color:#ffff;
+    font-weight: bold;
+}
+
+.separator {
+    background:rgb(24, 24, 24);
+    text-align: center;
+    text-transform: uppercase;
+    color:#fff;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+
+.form {
+    background-color: #000;
+    padding:3.5rem 0;
+    background-size: 25%;
+    background-image: url("assets/backForm.jpg");
+}
+
+
+.field{
+    width: 30%;
+    margin: auto;
+    text-align: left;
+    color:#fff;
+}
+
+.field + .field {
+    margin-top: 15px;
+}
+
+.field p {
+    text-transform: uppercase;
+}
+
+
+.field input, .field textarea {
+    outline: 0;
+    margin-top: 5px;
+    border:1px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+    padding:0.5rem 0.25rem;
+    width: 100%;
+    background-color: rgb(189, 124, 3);
+    color:#ffff;
+}
+
+.field input[type="submit"]{
+    cursor: pointer;
+    padding:0.75rem 0.25rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: orange;
+}
+
+
+.social {
+    background-color: #000;
+    color:#ffff;
+    padding-top:0.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.social h3 {
+    padding: 1rem 1rem 1.5rem;
+    font-size: 1.7rem;
+}
+
+.asks {
+    cursor: pointer;
+    width: 98%;
+    margin: auto;
+    padding:1rem 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.asks h2 {
+    font-size: 1.15rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.asks span {
+    cursor: pointer;
+}
+
+.asks p {
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: none;
+}
+
+footer {
+    background:rgb(24, 24, 24);
+    width: 100%;
+
+    padding: 0.5rem 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer img {
+    width: 6.5rem;
+    cursor: pointer;
+}
