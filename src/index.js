@@ -42,13 +42,12 @@ app.post("/feedback",(req,res)=>{
         }
 
         console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
         console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 
         return res.redirect("/")
     });
 });
 
-app.listen(15000,()=>{
+app.listen(process.env.PORT || 15000,()=>{
     console.log("Server is running");
 })
